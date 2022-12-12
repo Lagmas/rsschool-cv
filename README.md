@@ -1,1 +1,1 @@
-# rsschool-cv
+- https://lagmas.github.io/rsschool-cv/cv
