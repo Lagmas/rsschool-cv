@@ -1,11 +1,158 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Document</title>
-  </head>
-  <body>
-    Hello, World
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleksei</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/svg/cat.ico">
+</head>
+<body>
+  <header class = "header">
+    <div class = "container">        
+      <nav class= "header-nav">
+        <ul class= "nav-list">
+          <li class="nav-item"><a href="#profile" class="nav-link">profile</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#Summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">code</a></li>
+          <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">courses</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">education</a></li>
+          <li class="nav-item"><a href="#Languages" class="nav-link">Languages</a></li>
+        </ul>          
+      </nav>
+    </div>
+  </header>    
+  <main class = "main">
+    <div class = "main-container">
+      <div>      
+        <img src="./assets/img/foto2.jpg" alt="I was here">      
+      </div> 
+      <section class="section-profile" id="profile">
+        <h1 class="profile" style="font-size:5vw">Aleksei</h1>
+        <p class="profile" style="font-size:5vw">Full-Stack Developer</p>
+      </section>
+    </div>
+    <div class = "main-column">
+      <div class = "main-left">        
+        <section class="section" id="Contacts">
+          <h2>Contacts</h2>                   
+            <p><img src="./assets/img/tg.png" alt="Telegram" width="15" height="15">
+            <a href="https://t.me/lagmas">@lagmas</a></p>
+            <p><img src="./assets/img/email.png" alt="Email" width="15" height="15">
+            <a href="mailto:lagmas.93@gmail.com">lagmas.93@gmail.com</a></p>
+            <p><img src="./assets/img/git.png" alt="github" width="15" height="15">
+            <a href="github.com/lagmas">github.com/lagmas</a></p>                        
+        </section>
+        <section class="section" id="skills">
+          <h2>Skills</h2>
+          <div class = "main-column">
+            <div class = "skills-left">
+              <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Docker</li>
+                <li>REST API</li>
+                <li>Githab</li>
+                <li>Postmen</li>
+                <li>SQlite</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div class = "skills-right">
+              <ul>
+                <li>Nginx</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Django</li>
+                <li>Nginx</li>
+                <li>HTML</li>
+                <li>CSS</li>                
+              </ul>
+            </div>
+          </div>                  
+        </section>
+        <section class="section" id="courses">
+          <h2>Courses</h2>          
+          <p><img src="./assets/img/git.png" alt="Practicum" width="15" height="15">
+          <a href="https://practicum.yandex.ru/backend-developer/" class="footer-link" >Yandex.Practicum</a></p>
+          <p><img src="./assets/img/rs_school_js.svg" alt="rs_school" width="30" height="15">
+          <a href="https://rs.school/js/">RS Schools (in process…)</a></p>
+        </section>
+        <section class="section" id="education">
+          <h2>Education</h2>
+          <img src="./assets/img/Gumrf.png" alt="Gumrf" width="30" height="40">
+          <a href="https://gumrf.ru/sveden/struct/fac/ima/se/syeu/" class="Email" >Admiral Makarov State University of Maritime and Inland Shipping</a>
+        </section>
+        <section class="section" id="Languages">
+          <h2>Languages</h2>          
+          <p>Russian - native speaker.</p>
+          <p>English - A2 (B1 in process…)</p>         
+        </section>       
+      </div>
+      <div class = "main-right">
+        <section class="section" id="Summary">
+          <h2>Summary</h2>
+          <p>&nbsp;Moving into the IT industry is about constantly learning and growing. What I just lacked in the same place. Python was not chosen by chance, a programming language with simple syntax and semantics provided fast learning and helped develop algorithmic thinking. I am currently taking a course at RS School on JS/Front-end.stage 0
+          <br>&nbsp;From a hobby: mountain hiking will be the most important. After all, “Only mountains can be better than mountains, Which I haven’t been to yet…”
+        </section> 
+        <section class="section" id="Projects">
+          <h2>Projects</h2>           
+          <p><img src="./assets/img/git.png" alt="Github" width="15" height="15">
+          <a href="https://github.com/Lagmas/hw_python_oop" class="footer-link" >Fitness tracker software module</a></p> 
+          <p><img src="./assets/img/git.png" alt="Github" width="15" height="15">
+          <a href="https://github.com/Lagmas/hw05_final" class="Email" >Social network</a></p>
+          <p><img src="./assets/img/git.png" alt="Telegram" width="15" height="15">
+          <a href="https://github.com/Lagmas/api_final_yatube" class="Github" >API for social network</a></p>
+        </section>         
+        <section class="section" id="code">
+          <h2>Code</h2>          
+          <pre><code>
+def broken_search(nums: list, target: int) -> int:
+  """Search in a broken_array"""
+  start = 0
+  end = len(nums) - 1
+  index = -1
+  while start  &lt;= end:
+      mid = (start + end) // 2
+      mid_value = nums[mid]
+      if mid_value == target:
+          index = mid
+          break
+      if nums[start]  &lt;= mid_value:
+          if nums[start]  &lt;= target  &lt;= mid_value:
+              end = mid - 1
+          else:
+              start = mid + 1
+      else:
+          if mid_value  &lt;= target  &lt;= nums[end]:
+              start = mid + 1
+          else:
+              end = mid - 1
+  return index
+          </code></pre>        
+        </section>            
+      </div>
+    </div>
+  </main>
+  <footer class = "footer">
+    <div class = "footer-container">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="https://github.com/lagmas" class="footer-link">
+            <img src="./assets/img/github--icon3.png" alt="Логотип Github" width="100" height="40">
+          </a>
+        </li>
+        <li class="footer-item">2022</li>
+        <li class="footer-item">
+          <a href="https://rs.school/js/" class="footer-link">
+            <img src="./assets/img/rs_school_js.svg" alt="Логотип RS School" width="50" height="19">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>
